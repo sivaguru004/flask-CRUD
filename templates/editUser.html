@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel='stylesheet' href='{{url_for("static", filename = "style.css")}}'>
+</head>
+<body>
+    <h1>Update User Detail</h1>
+    <form action='' method='post'>
+        <label>Name:</label>
+        <input type='text' name='name' value='{{data.name}}' required><br><br>
+        <label>Age:</label>
+        <input type='int' name='age' value='{{data.age}}' required><br><br>
+        <label>City:</label>
+        <input type='text' name='city' value='{{data.city}}' required><br><br>
+        <input type='submit' value = 'Update Detail'>
+    </form>
+</body>
+</html>
